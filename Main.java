@@ -1,18 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Car fred = new Car();
-        fred.color = "black";
-        fred.year = 2014;
-        fred.model = "jereke";
-        fred.make = "jeep";
+        Car fred = new Car("black", 2014, "jereke", "jeep");
         fred.printCar();
+        System.out.println(fred.getColor());
+        fred.setColor("blue");
+        System.out.println(fred.getColor());
 
-        Car sally = new Car();
-        sally.color = "pink";
-        sally.year = 1800;
-        sally.refurbish();
-        sally.model = "accord";
-        sally.make = "honda";
+        int a = 2;
+
+        Car sally = new Car("pink", 1800, "accord", "honda");
+
         sally.printCar();
 
     }
