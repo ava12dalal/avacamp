@@ -12,6 +12,10 @@ public class Main {
 
         sally.printCar();
 
+        Person harry = new Person("brown", 10, 8, 0, "Harry");
+
+        harry.print();
+
     }
 
 }
